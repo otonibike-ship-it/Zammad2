@@ -99,7 +99,7 @@ services:
     expose:
       - "${NGINX_PORT:-8090}"
     ports:
-      - "${NGINX_EXPOSE_PORT:-8090}:${NGINX_PORT:-8070}"
+      - "${NGINX_EXPOSE_PORT:-8090}:${NGINX_PORT:-8090}"
     depends_on:
       - zammad-railsserver
 
